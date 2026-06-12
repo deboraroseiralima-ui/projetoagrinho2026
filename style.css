@@ -98,8 +98,24 @@ a {
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, var(--green-50) 0%, #fff 100%);
-  padding: 4rem 0 5rem;
+  .hero {
+  min-height: 500px;
+
+  background:
+    linear-gradient(
+      rgba(20, 83, 45, 0.65),
+      rgba(240, 253, 244, 0.85)
+    ),
+    url("agro.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+
+  padding: 5rem 0;
+}
 }
 
 .hero-grid {
