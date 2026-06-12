@@ -504,48 +504,41 @@ h3 {
 }
 
 /* RESPONSIVIDADE */
-@media (max-width:860px) {
+@media (max-width:860px){
 
-  .hero-grid,
-  .chart-grid,
-  .compare,
-  .footer-grid,
-  .stat-grid {
-    grid-template-columns: 1fr
-  }
-
-  .stat-grid {
-    grid-template-columns: repeat(2, 1fr)
-  }
-
-  .menu-toggle {
-    display: block
-  }
-
-  .nav-links {
-    display:none  !important;
-    transition:.3s;
-    position:absolute  !important;
-    top:64px;
-    left:10px;
-    right:10px;
+.nav-links{
+    display:none !important;
+    position:absolute !important;
+    top:65px;
+    left:15px;
+    right:15px;
 
     background:#fff;
 
     flex-direction:column;
-    gap:0.3rem;
 
-    padding:0.6rem;
+    padding:10px;
+
     border-radius:15px;
 
-    box-shadow: var(--shadow);
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
 
-    border:1px solid var(--border);
+    z-index:9999;
 }
 
-  .nav-links.open {
-    display: flex
-  }
+
+.nav-links.open{
+    display:flex !important;
+}
+
+
+.nav-links a{
+    display:block;
+    padding:12px;
+    font-size:15px;
+}
+
+}
 
   .hero-art {
     height: 240px
