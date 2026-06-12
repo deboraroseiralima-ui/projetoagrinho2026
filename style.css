@@ -523,9 +523,9 @@ h3 {
   }
 
   .nav-links {
-    display:none;
+    display:none  !important;
     transition:.3s;
-    position:absolute;
+    position:absolute  !important;
     top:64px;
     left:10px;
     right:10px;
