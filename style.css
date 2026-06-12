@@ -515,7 +515,8 @@ h3 {
   }
 
   .nav-links {
-    display: none;
+    display:flex;
+    transition:.3s;
     position: absolute;
     top: 64px;
     left: 0;
