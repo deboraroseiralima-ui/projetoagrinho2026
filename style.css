@@ -280,7 +280,7 @@ h3 {
 
 .chart-card canvas {
   margin-top: 1rem;
-  max-height: 300px
+  width:100%!important;
 }
 
 /* SECTIONS */
