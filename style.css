@@ -276,11 +276,15 @@ h3 {
   border-radius: var(--radius);
   border: 1px solid var(--border);
   box-shadow: 0 4px 20px -10px rgba(0, 0, 0, .08);
+
+  height: 380px;
 }
+
 
 .chart-card canvas {
   margin-top: 1rem;
   width:100%!important;
+  height:260px!important;
 }
 
 /* SECTIONS */
