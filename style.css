@@ -99,7 +99,7 @@ a {
 /* HERO */
 .hero {
   background: linear-gradient(135deg, var(--green-50) 0%, #fff 100%);
-  padding: 4rem 0 5rem;
+  padding: 4rem 0 5rem
 }
 
 .hero-grid {
