@@ -75,7 +75,8 @@ a {
 }
 
 .nav-links a {
-  font-size: .95rem;
+  font-size:0.85rem;
+  padding:0.5rem;
   color: var(--fg);
   font-weight: 500;
   transition: color .2s
@@ -522,17 +523,25 @@ h3 {
   }
 
   .nav-links {
-    display:flex;
+    display:none;
     transition:.3s;
-    position: absolute;
-    top: 64px;
-    left: 0;
-    right: 0;
-    background: #fff;
-    flex-direction: column;
-    padding: 1rem 1.25rem;
-    border-bottom: 1px solid var(--border);
-  }
+    position:absolute;
+    top:64px;
+    left:10px;
+    right:10px;
+
+    background:#fff;
+
+    flex-direction:column;
+    gap:0.3rem;
+
+    padding:0.6rem;
+    border-radius:15px;
+
+    box-shadow: var(--shadow);
+
+    border:1px solid var(--border);
+}
 
   .nav-links.open {
     display: flex
