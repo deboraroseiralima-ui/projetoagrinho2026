@@ -142,3 +142,61 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
+import { Header } from "@/components/header"
+import { PestsSection } from "@/components/pests-section"
+import { Footer } from "@/components/footer"
+
+export const metadata = {
+  title: "Pragas | AgroForte",
+  description: "Identificação e tratamento das pragas agrícolas",
+}
+
+export default function PragasPage() {
+  return (
+    <main className="min-h-screen bg-background">
+      <Header />
+      <PestsSection />
+      <Footer />
+    </main>
+  )
+}
+
+import { Header } from "@/components/header"
+import { PracticesSection } from "@/components/practices-section"
+import { Footer } from "@/components/footer"
+
+export const metadata = {
+  title: "Práticas Sustentáveis | SustentAgro",
+  description: "Conheça as principais práticas de agricultura sustentável: Plantio Direto, FBN e ILPF",
+}
+
+export default function PraticasPage() {
+  return (
+    <main className="min-h-screen bg-background">
+      <Header />
+      <PracticesSection />
+      <Footer />
+    </main>
+  )
+}
+
+import { Header } from "@/components/header"
+import { ReferencesSection } from "@/components/references-section"
+import { Footer } from "@/components/footer"
+
+export const metadata = {
+  title: "Referências | SustentAgro",
+  description: "Referências confiáveis de sementes, análise de solo e adubos para sua produção agrícola",
+}
+
+export default function ReferenciasPage() {
+  return (
+    <main className="min-h-screen bg-background">
+      <Header />
+      <ReferencesSection />
+      <Footer />
+    </main>
+  )
+}
+
