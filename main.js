@@ -81,7 +81,7 @@ window.addEventListener('load', () => {
   new Chart(document.getElementById('populationChart'), {
     type: 'line',
     data: {
-      labels: ['1950','1970','1990','2010','2024','2030','2050'],
+      labels: ['1950', '1970', '1990', '2010', '2024', '2030', '2050'],
       datasets: [{
         label: 'População (bilhões)',
         data: [2.5, 3.7, 5.3, 6.9, 8.1, 8.5, 9.7],
@@ -97,11 +97,11 @@ window.addEventListener('load', () => {
   new Chart(document.getElementById('unChart'), {
     type: 'line',
     data: {
-      labels: ['2024','2050','2075','2100'],
+      labels: ['2024', '2050', '2075', '2100'],
       datasets: [
-        { label: 'Cenário alto', data: [8.1,10.3,12.0,14.1], borderColor: '#dc2626', tension:.3 },
-        { label: 'Cenário médio', data: [8.1,9.7,10.4,10.9], borderColor: green, tension:.3 },
-        { label: 'Cenário baixo', data: [8.1,9.0,8.5,7.3], borderColor: darkGreen, tension:.3 },
+        { label: 'Cenário alto', data: [8.1, 10.3, 12.0, 14.1], borderColor: '#dc2626', tension: .3 },
+        { label: 'Cenário médio', data: [8.1, 9.7, 10.4, 10.9], borderColor: green, tension: .3 },
+        { label: 'Cenário baixo', data: [8.1, 9.0, 8.5, 7.3], borderColor: darkGreen, tension: .3 },
       ],
     },
     options: commonOpts,

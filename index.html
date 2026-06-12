@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SustentAgro - Agricultura Sustentável</title>
+  <meta name="description"
+    content="Portal sobre agricultura sustentável: forragem, meio ambiente, práticas, pragas e referências." />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#inicio" class="logo">🌱 SustentAgro</a>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+      <nav class="nav-links">
+        <a href="#inicio">Início</a>
+        <a href="#forragem">Forragem</a>
+        <a href="#meio-ambiente">Meio Ambiente</a>
+        <a href="#praticas">Práticas</a>
+        <a href="#pragas">Pragas</a>
+        <a href="#referencias">Referências</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- INÍCIO -->
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">Agricultura Sustentável</span>
+          <h1>Alimentando o futuro com responsabilidade</h1>
+          <p class="lead">Em 2050, seremos cerca de 9,7 bilhões de pessoas. Produzir mais alimentos com menos impacto
+            ambiental é o grande desafio do nosso século.</p>
+          <div class="cta-row">
+            <a href="#praticas" class="btn btn-primary">Conheça as práticas</a>
+            <a href="#referencias" class="btn btn-ghost">Ver referências</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-circle"></div>
+          <div class="hero-emoji">🌾</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stat-grid">
+        <div class="stat-card">
+          <div class="stat-num">9.7B</div>
+          <div class="stat-label">População mundial em 2050</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">+70%</div>
+          <div class="stat-label">Aumento na demanda por alimentos</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">33%</div>
+          <div class="stat-label">Solos do mundo degradados</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">70%</div>
+          <div class="stat-label">Da água doce vai à agricultura</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="charts">
+      <div class="container">
+        <h2>Projeções populacionais</h2>
+        <p class="muted">Dados das Nações Unidas sobre o crescimento populacional global.</p>
+        <div class="chart-grid">
+          <div class="chart-card">
+            <h3>População mundial (bilhões)</h3>
+            <canvas id="populationChart"></canvas>
+          </div>
+          <div class="chart-card">
+            <h3>Cenários ONU (2024-2100)</h3>
+            <canvas id="unChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORRAGEM -->
+    <section id="forragem" class="section alt">
+      <div class="container">
+        <span class="badge">Forragem</span>
+        <h2>Culturas forrageiras e rotação</h2>
+        <p>Plantas forrageiras alimentam o gado e melhoram o solo. A rotação de culturas evita o esgotamento de
+          nutrientes e quebra ciclos de pragas e doenças.</p>
+        <div class="card-grid">
+          <div class="card">
+            <h3>🌽 Milho</h3>
+            <p>Alta produtividade, ótima para silagem.</p>
+          </div>
+          <div class="card">
+            <h3>🌿 Braquiária</h3>
+            <p>Recupera pastagens e protege o solo.</p>
+          </div>
+          <div class="card">
+            <h3>🫘 Soja</h3>
+            <p>Fixa nitrogênio e enriquece o solo.</p>
+          </div>
+          <div class="card">
+            <h3>🌾 Sorgo</h3>
+            <p>Resistente à seca, boa cobertura vegetal.</p>
+          </div>
+        </div>
+        <div class="cycle">
+          <h3>Ciclo ideal de rotação</h3>
+          <div class="cycle-row">
+            <div class="cycle-step">1. Leguminosa</div>
+            <div class="arrow">→</div>
+            <div class="cycle-step">2. Cereal</div>
+            <div class="arrow">→</div>
+            <div class="cycle-step">3. Cobertura</div>
+            <div class="arrow">→</div>
+            <div class="cycle-step">4. Pastagem</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEIO AMBIENTE -->
+    <section id="meio-ambiente" class="section">
+      <div class="container">
+        <span class="badge">Meio Ambiente</span>
+        <h2>Impacto ambiental da agricultura</h2>
+        <p>Comparativo entre práticas sustentáveis e tradicionais.</p>
+        <div class="compare">
+          <div class="compare-col good">
+            <h3>✅ Sustentável</h3>
+            <ul>
+              <li>Sequestro de carbono no solo</li>
+              <li>Preservação da biodiversidade</li>
+              <li>Menor uso de água e agroquímicos</li>
+              <li>Solos mais férteis a longo prazo</li>
+            </ul>
+          </div>
+          <div class="compare-col bad">
+            <h3>❌ Tradicional</h3>
+            <ul>
+              <li>Emissão de gases de efeito estufa</li>
+              <li>Erosão e compactação do solo</li>
+              <li>Contaminação de rios e lençóis</li>
+              <li>Perda de fertilidade natural</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRÁTICAS -->
+    <section id="praticas" class="section alt">
+      <div class="container">
+        <span class="badge">Práticas Sustentáveis</span>
+        <h2>Tecnologias que transformam o campo</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>🌱 Plantio Direto (SPD)</h3>
+            <p>Semeadura sobre palhada sem revolver o solo. Reduz erosão e mantém umidade.</p>
+          </div>
+          <div class="card">
+            <h3>🦠 Fixação Biológica de N (FBN)</h3>
+            <p>Bactérias capturam nitrogênio do ar e o fornecem às plantas, reduzindo adubação química.</p>
+          </div>
+          <div class="card">
+            <h3>🌳 ILPF</h3>
+            <p>Integração Lavoura-Pecuária-Floresta: diversifica renda e regenera ecossistemas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRAGAS -->
+    <section id="pragas" class="section">
+      <div class="container">
+        <span class="badge">Pragas</span>
+        <h2>Catálogo de pragas</h2>
+        <div class="filters" id="pestFilters">
+          <button class="filter active" data-filter="todos">Todos</button>
+          <button class="filter" data-filter="inseto">Insetos</button>
+          <button class="filter" data-filter="fungo">Fungos</button>
+          <button class="filter" data-filter="nematoide">Nematoides</button>
+        </div>
+        <div class="card-grid" id="pestGrid"></div>
+      </div>
+    </section>
+
+    <!-- REFERÊNCIAS -->
+    <section id="referencias" class="section alt">
+      <div class="container">
+        <span class="badge">Referências</span>
+        <h2>Fornecedores e instituições</h2>
+        <div class="tabs" id="refTabs">
+          <button class="tab active" data-tab="sementes">Sementes</button>
+          <button class="tab" data-tab="solo">Análise de Solo</button>
+          <button class="tab" data-tab="adubos">Adubos</button>
+        </div>
+        <div class="tab-content" id="refContent"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">🌱 SustentAgro</div>
+        <p class="muted">Por uma agricultura que alimenta e preserva.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <a href="#forragem">Forragem</a>
+        <a href="#meio-ambiente">Meio Ambiente</a>
+        <a href="#praticas">Práticas</a>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p class="muted">contato@sustentagro.com</p>
+      </div>
+    </div>
+    <div class="container copyright">© 2026 SustentAgro. Todos os direitos reservados.</div>
+  </footer>
+</body>
+
+</html>
